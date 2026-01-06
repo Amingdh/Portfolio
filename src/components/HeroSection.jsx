@@ -1,3 +1,4 @@
+import Typewriter from "typewriter-effect";
 import { ArrowDown } from "lucide-react";
 
 export const HeroSection = () => {
@@ -8,22 +9,42 @@ export const HeroSection = () => {
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
+          <div className="flex justify-center mb-6 opacity-0 animate-fade-in">
+            <div className="relative w-32 h-32 md:w-40 md:h-40">
+              <div className="absolute inset-0 rounded-full bg-linear-to-r from-primary to-purple-500 blur-lg opacity-50 animate-pulse-subtle"></div>
+              <img
+                src="/profile.png"
+                alt="Mohamed Amin Gadhgadhi"
+                className="relative w-full h-full object-cover rounded-full border-2 border-primary/50 shadow-2xl"
+              />
+            </div>
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
-            <span className="text-primary opacity-0 animate-fade-in-delay-1">
-              {" "}
-              Pedro
+            <span className="block mb-2">
+              <span className="text-primary">
+                Mohamed Amin Gadhgadhi
+              </span>
             </span>
-            <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
-              {" "}
-              Machado
-            </span>
+            <div className="text-2xl md:text-4xl text-muted-foreground mt-4 h-[60px]">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Full Stack Developer & Systems Designer",
+                    "Certified Software Engineer & AI Specialist",
+                    "DevOps & Automation Specialist",
+                    "Innovation-Driven Problem Solver"
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 50,
+                  deleteSpeed: 30,
+                }}
+              />
+            </div>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I create stellar web experiences with modern technologies.
-            Specializing in front-end development, I build interfaces that are
-            both beautiful and functional.
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+            Final-year engineering student with 3+ years of experience in Fullstack development, Applied AI,Devops and IT support. Passionate about building intelligent features, scalable systems, and real-world solutions.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">

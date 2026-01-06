@@ -7,6 +7,7 @@ import {
   Send,
   Twitch,
   Twitter,
+  Github,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
@@ -56,10 +57,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:MohamedAmin.Gadhgadhi@esprit.tn"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@gmail.com
+                    MohamedAmin.Gadhgadhi@esprit.tn
                   </a>
                 </div>
               </div>
@@ -70,10 +71,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Phone</h4>
                   <a
-                    href="tel:+11234567890"
+                    href="tel:+21629080052"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    +216 29 080 052
                   </a>
                 </div>
               </div>
@@ -84,7 +85,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Vancouver, BC, Canada
+                    Tunis, Ariana, Tunisia
                   </a>
                 </div>
               </div>
@@ -93,17 +94,14 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
-                  <Linkedin />
+                <a href="https://www.linkedin.com/in/amin-gadhgadhi-542594284/" target="_blank">
+                  <Linkedin className="h-6 w-6 text-foreground hover:text-primary transition-colors" />
                 </a>
-                <a href="#" target="_blank">
-                  <Twitter />
+                <a href="https://github.com/Amingdh" target="_blank">
+                  <Github className="h-6 w-6 text-foreground hover:text-primary transition-colors" />
                 </a>
-                <a href="#" target="_blank">
-                  <Instagram />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitch />
+                <a href="mailto:MohamedAmin.Gadhgadhi@esprit.tn">
+                  <Mail className="h-6 w-6 text-foreground hover:text-primary transition-colors" />
                 </a>
               </div>
             </div>
@@ -130,7 +128,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  placeholder="Mohamed Amin Gadhgadhi..."
                 />
               </div>
 

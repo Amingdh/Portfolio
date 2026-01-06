@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Briefcase, Code, User, Brain, Smartphone, Shield } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -12,20 +12,20 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
+              Dynamic Full-Stack Developer & AI Enthusiast
             </h3>
 
             <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
-              in creating responsive, accessible, and performant web
-              applications using modern technologies.
+              Final-year engineering student with extensive experience in crafting innovative web
+              applications, mobile solutions, and back-end systems. I specialize in delivering efficient,
+              scalable solutions across front-end and back-end technologies.
             </p>
 
             <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
+              Passionate about transforming ideas into impactful digital experiences through technical
+              expertise and innovative approaches. I thrive in collaborative environments, employing
+              creative problem-solving techniques to overcome challenges and drive success with
+              cutting-edge industry practices.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -35,7 +35,8 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href=""
+                href="/cv.pdf"
+                download
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
@@ -47,13 +48,27 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
+                  <Brain className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">AI Integration & Implementation</h4>
+                  <p className="text-muted-foreground">
+                    Specialized in integrating AI-powered solutions including OCR for document scanning,
+                    semantic analysis for intelligent detection, and ML model implementation using Ollama and modern AI tools.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Web Development</h4>
+                  <h4 className="font-semibold text-lg">Full-Stack Development</h4>
                   <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks.
+                    Expert in building complete web applications using Angular, React, Next.js for frontend,
+                    and Spring Boot, .NET, Symfony for backend with REST API architecture and database management.
                   </p>
                 </div>
               </div>
@@ -61,29 +76,13 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                  <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                  <Smartphone className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
+                  <h4 className="font-semibold text-lg">Mobile Development </h4>
                   <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
-                  </p>
+                    Experienced in cross-platform mobile application development using Flutter and FlutterFlow, focusing on building scalable, user-friendly applications. Skilled in designing responsive UI components, and managing application state to deliver high-performance mobile solutions.</p>
                 </div>
               </div>
             </div>
